@@ -16,4 +16,4 @@ On the React Redux side, product search and the site's light/dark modes have bee
 
 - Uygulama linki: https://react-redux-spa-app.netlify.app/
 
-- Uygulama linki: https://react-redux-spa-app.netlify.app/
+- App linki: https://react-redux-spa-app.netlify.app/
