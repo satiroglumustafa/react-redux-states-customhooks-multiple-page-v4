@@ -42,7 +42,7 @@ const useFetch = (url) => {
       window.removeEventListener("online", handleOnline);
       window.removeEventListener("offline", handleOffline);
     };
-  }, [url]);
+  }, [url, internetControl]);
 
   return { loading, dataApi,internetControl };
 };

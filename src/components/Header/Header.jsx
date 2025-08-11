@@ -1,7 +1,7 @@
 import { Col, Container, Form, ListGroup, Row } from "react-bootstrap";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import { useContext, useEffect, useMemo, useRef, useState } from "react";
+import { useContext, useEffect, useMemo, useRef } from "react";
 import ApiContext from "../../contexts/ApiContext";
 import { slugify } from "../../utils/utils";
 import { useDispatch, useSelector } from "react-redux";
