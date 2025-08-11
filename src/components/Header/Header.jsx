@@ -49,7 +49,9 @@ const Header = () => {
 
   const blurHandler = () => {
     hoverElement.current.classList.remove("active");
-    dispatch(clearSearchTerm()); //search redux
+    setTimeout(()=>{
+      dispatch(clearSearchTerm()); //search redux
+    },100)
   };
 
   const filteredSearch = useMemo(() => {
@@ -90,9 +92,11 @@ const Header = () => {
                       onChange={searchHandler}
                       onBlur={blurHandler}
                     />
+                    
                     <div className="search-area" ref={hoverElement}>
                       <ListGroup>
                         {filteredSearch.map((item) => {
+                           
                           return (
                             <ListGroup.Item key={item.id}>
                               <Link
