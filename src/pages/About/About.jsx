@@ -3,7 +3,7 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <div class="about-area">
+      <div className="about-area">
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -26,7 +26,7 @@ const About = () => {
           infancy. Various versions have evolved over the years, sometimes by
           accident, sometimes on purpose (injected humour and the like).
         </p>
-        <h4 class="sub-title">Where does it come from?</h4>
+        <h4 className="sub-title">Where does it come from?</h4>
         <p>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
@@ -48,7 +48,7 @@ const About = () => {
           exact original form, accompanied by English versions from the 1914
           translation by H. Rackham.
         </p>
-        <h4 class="sub-title">Where can I get some?</h4>
+        <h4 className="sub-title">Where can I get some?</h4>
         <p>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -62,7 +62,7 @@ const About = () => {
           looks reasonable. The generated Lorem Ipsum is therefore always free
           from repetition, injected humour, or non-characteristic words etc.
         </p>
-        <h4 class="sub-title">
+        <h4 className="sub-title">
           The standard Lorem Ipsum passage, used since the 1500s
         </h4>
         <p>
@@ -74,7 +74,7 @@ const About = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
         </p>
-        <h4 class="sub-title">
+        <h4 className="sub-title">
           Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero
           in 45 BC
         </h4>

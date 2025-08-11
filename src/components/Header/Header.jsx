@@ -12,8 +12,10 @@ const Header = () => {
   const { dataApi } = useContext(ApiContext);
 
   // redux
-  const themeModeParam = useSelector((state) => state.themeMode.isDark);
-  const searchTerm = useSelector((state) => state.searchProduct.searchTerm);
+  const { themeModeParam, searchTermParam } = useSelector((state) => ({
+    themeModeParam: state.themeMode.isDark,
+    searchTermParam: state.searchProduct.searchTerm
+  }));
   const dispatch = useDispatch();
 
   // switch redux
@@ -52,9 +54,9 @@ const Header = () => {
 
   const filteredSearch = useMemo(() => {
     return dataApi.filter((product) =>
-      product.title.toLowerCase().includes(searchTerm.toLowerCase())
+      product.title.toLowerCase().includes(searchTermParam.toLowerCase())
     );
-  }, [dataApi, searchTerm]);
+  }, [dataApi, searchTermParam]);
 
   return (
     <>
@@ -84,7 +86,7 @@ const Header = () => {
                     <Form.Control
                       type="text"
                       placeholder="Search Product"
-                      value={searchTerm}
+                      value={searchTermParam}
                       onChange={searchHandler}
                       onBlur={blurHandler}
                     />
@@ -92,7 +94,7 @@ const Header = () => {
                       <ListGroup>
                         {filteredSearch.map((item) => {
                           return (
-                            <ListGroup.Item>
+                            <ListGroup.Item key={item.id}>
                               <Link
                                 to={`${slugify(item.category.name)}/${slugify(
                                   item.title
