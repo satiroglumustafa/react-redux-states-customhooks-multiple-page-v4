@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <strong>Copyright Mustafa Şatıroğlu</strong> 2025 Tüm Hakları Saklıdır
+        <strong>Copyright Mustafa Şatıroğlu</strong> 2025 All Rights Reserved
       </footer>
     </>
   );

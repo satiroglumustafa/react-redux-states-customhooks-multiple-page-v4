@@ -23,7 +23,7 @@ const CategoryListItem = (props) => {
               }}
               className="btn btn-success w-100"
             >
-              Detay
+              Detail
             </Link>
             {/* Dikkat  /$ koymasaydık relative path olurdu, yani biz bunu kategori sayfasında çalıştırğımız 
           için React router bunu relative olarak uygulardı ve url içine /categories/electronics/stylish-red-headphones bunu yzardı

@@ -12,7 +12,7 @@ const Home = ()=>{
     return(
         <>
         <div className='most-liked-area mb-5'>
-            <h2 className='sub-title'>En Çok Beğenilenler</h2>
+            <h2 className='sub-title'>Most Liked</h2>
             <MostLikedProducts loadingDataApi={loading} mostLikedDataApi = {dataApi} />
         </div>
         </>

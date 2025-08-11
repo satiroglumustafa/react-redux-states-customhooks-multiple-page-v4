@@ -29,7 +29,7 @@ const MostLikedProduct = React.memo((props) => {
             </Link>
           </Card.Text>
           <Button className="w-100" variant="success">
-            Fiyatı : {props.price} TL
+            Price : {props.price} $
           </Button>
         </Card.Body>
       </Card>
