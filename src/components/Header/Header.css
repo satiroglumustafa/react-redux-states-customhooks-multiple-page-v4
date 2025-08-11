@@ -1,0 +1,108 @@
+.dark {
+  background: #000;
+}
+
+.header {
+
+  background: #b78a00;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+
+.header a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.header a:hover {
+  color: #000;
+}
+
+.themeMode {
+  position: absolute;
+  right: 0;
+}
+
+.form-check-label {
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dark .header a {
+
+  color: #000;
+}
+
+.dark .header a:hover {
+
+  color: #fff;
+}
+
+.dark .form-check-label {
+
+  color: #000;
+}
+
+.dark .form-check-input:checked {
+  background-color: #52441d;
+  border-color: #52441d;
+}
+
+.search-control {
+  position: relative;
+}
+
+.search-control .search-area {
+  position: absolute;
+  right: 0;
+  width: 320px;
+  max-height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.search-control .search-area a {
+  color: #000;
+}
+
+.search-control .search-area a:hover {
+  color: #b78a00;
+}
+
+.search-control .search-area.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+  box-shadow: 1px 1px 10px #00000061;
+}
+
+
+@media(max-width:767px) {
+  header form .form-check {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  header form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-control {
+    width: 100%;
+  }
+
+}

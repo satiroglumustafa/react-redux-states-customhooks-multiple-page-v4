@@ -1,0 +1,64 @@
+.most-liked-area .card-img-top {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+   display:flex; align-items:center; justify-content:center;
+}
+
+.most-liked-area .card-text a,.most-liked-area .card-title a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    min-height: 48px;
+}
+.point {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.dark .most-liked-area .card {
+    background: #2b2b2b;
+    box-shadow: 1px 1px 10px #ac8b2d;
+}
+.dark .most-liked-area .card-text a,.dark .most-liked-area .card-title a {
+    color: #fff;
+}
+
+.most-liked-area .card-img {
+    height: 200px;
+}
+
+.most-liked-area .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+}
+
+.most-liked-area .swiper {
+    padding-bottom: 30px;
+}
+
+.most-liked-area .swiper-pagination-bullet {
+    background: #b78a00;
+}
+
+.most-liked-area  .swiper-button-prev:after,.most-liked-area  .swiper-button-next:after {
+    color: #fff;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b78a00;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.most-liked-area  .swiper-button-prev,.most-liked-area  .swiper-button-next {
+    width: auto;
+    height: auto;
+    margin-top: -60px;
+}
