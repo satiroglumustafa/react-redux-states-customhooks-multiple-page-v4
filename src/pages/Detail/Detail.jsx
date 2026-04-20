@@ -1,4 +1,4 @@
-import {  useLocation, useParams } from "react-router-dom";
+import {  useLocation, useParams, useNavigate } from "react-router-dom";
 import "./Detail.css";
 import { Breadcrumb, Col } from "react-bootstrap";
 import { useContext } from "react";
@@ -8,6 +8,7 @@ import Loading from "../../components/Loading/Loading";
 
 const Detail = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const categoryName = location.state?.categoryName;  //useLocation kullanarak category isminini breadCrumba yazdık
   const {category,title} = useParams(); //  useParams  kullanarak url'den  category ve title çektik 
   
@@ -33,8 +34,11 @@ const Detail = () => {
       <Col xs={12}>
         <Breadcrumb>
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item >
-            {categoryName}
+          <Breadcrumb.Item 
+            onClick={() => navigate('/categories', { state: { categoryFilter: matchedItem.category.name } })}
+            style={{ cursor: 'pointer' }}
+          >
+            {categoryName || matchedItem.category.name}
           </Breadcrumb.Item>
           <Breadcrumb.Item active>{title.replace(/-/g, " ").toUpperCase()}</Breadcrumb.Item>
         </Breadcrumb>
