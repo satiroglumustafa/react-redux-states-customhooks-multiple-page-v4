@@ -32,8 +32,7 @@
 }
 
 .most-liked-area .swiper-pagination {
-    position: absolute;
-    bottom: 0;
+    display: none;
 }
 
 .most-liked-area .swiper {
